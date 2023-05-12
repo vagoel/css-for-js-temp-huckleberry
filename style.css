@@ -1,12 +1,111 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 /* Add styles here! */
+
+/* Spacing
+This app uses an 8px unit. All spaces are a multiple of 8px:
+
+8px
+16px
+24px
+32px
+48px
+64px
+96px
+128px
+
+When it comes to max widths (e.g. the maximum width of the card), arbitrary values can be used.
+
+Font
+1 font is used in this project: Lato. It is already included in the stylesheet.
+
+For font sizes, the rem unit should be used.
+
+The scale is:
+
+1rem
+1.25rem
+1.5rem
+2rem
+By default, 1rem is equivalent to 16px.
+
+Color palette
+Primary (green):
+
+hsl(160deg, 100%, 30%)
+
+Secondary (gold):
+
+hsl(45deg, 100%, 50%) (lighter)
+hsl(45deg, 100%, 40%) (darker)
+
+Grays:
+
+hsl(0deg, 0%, 0%) (black)
+hsl(0deg, 0%, 10%) (very dark)
+hsl(0deg, 0%, 30%) (dark)
+hsl(0deg, 0%, 40%) (medium)
+hsl(0deg, 0%, 60%) (light)
+hsl(0deg, 0%, 100%) (white)
+
+*/
+
+.max-width-wrapper {
+  margin-inline: auto;
+  max-width: 800px;
+}
+
+.intro-chunk {
+  padding: 24px;
+  padding-top: 8px;
+  margin-top: 96px;
+  margin-bottom: 64px;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 24px;
+  padding-top: 8px;
+  border-bottom: 8px solid #999999;
+}
+
+.indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  width: fit-content;
+  padding: 16px 32px;
+  margin-left: -32px;
+  margin-top: 0px;
+  border-bottom: 8px solid #cc9900;
+}
+
+p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+.card p {
+  margin-bottom: 0px;
+}
+
+main {
+  background-color: #666666;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
